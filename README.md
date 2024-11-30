@@ -1,0 +1,2 @@
+# scorelingo
+Vocabulary learning app
