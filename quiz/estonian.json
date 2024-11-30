@@ -1,0 +1,23 @@
+[
+  {
+      "et": {
+          "1st": "kodu",
+          "2nd": "kodu",
+          "3rd": "kodu"
+      },
+      "ru": ["дом"],
+      "en": [
+          "house",
+          "home"
+      ]
+  },
+  {
+      "et": {
+          "1st": "aeg",
+          "2nd": "aja",
+          "3rd": "aega"
+      },
+      "ru": ["время"],
+      "en": ["time"]
+  }
+]
