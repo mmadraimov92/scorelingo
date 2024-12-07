@@ -41,7 +41,7 @@ func (t *Quiz) Render(ctx context.Context) {
 		log.Fatal(err)
 	}
 
-	t.draw(fmt.Sprint(db))
+	t.draw(fmt.Sprint(db.words[:10]))
 	time.Sleep(10 * time.Second)
 	// todo: start quiz
 	// todo: multiple choices
