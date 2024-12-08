@@ -4,6 +4,7 @@ import (
 	"bytes"
 	_ "embed"
 	"encoding/csv"
+	"fmt"
 )
 
 //go:embed estonian.csv
@@ -23,6 +24,10 @@ type Estonian struct {
 	FirstForm  string
 	SecondForm string
 	ThirdForm  string
+}
+
+func (e Estonian) allForms() string {
+	return fmt.Sprintf("%s, %s, %s", e.FirstForm, e.SecondForm, e.ThirdForm)
 }
 
 func load() (*db, error) {

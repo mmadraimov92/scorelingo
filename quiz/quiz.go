@@ -4,8 +4,9 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"scorelingo/terminal"
 	"time"
+
+	"scorelingo/terminal"
 )
 
 type Quiz struct {
@@ -41,10 +42,10 @@ func (t *Quiz) Render(ctx context.Context) {
 		log.Fatal(err)
 	}
 
-	t.draw(fmt.Sprint(db.words[:10]))
+	questions := questions(db)
+	fmt.Println(questions)
+
 	time.Sleep(10 * time.Second)
-	// todo: start quiz
-	// todo: multiple choices
 }
 
 func (t *Quiz) Title() string {
